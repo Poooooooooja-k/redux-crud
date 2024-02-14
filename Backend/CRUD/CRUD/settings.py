@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-79rasx8=23s*yo=kvx$4%7h3hh^5_d99v^8+cofmsygg1yps(5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -157,11 +157,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-REST_FRAMEWORK={
-    'DEFAULT_AUTHENTICATION_CLASSES':[
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ]
-}
+# REST_FRAMEWORK={
+#     'DEFAULT_AUTHENTICATION_CLASSES':[
+#         'rest_framework_simplejwt.authentication.JWTAuthentication',
+#     ]
+# }
 
 SIMPLE_JWT={
     'ACCESS_TOKEN_LIFETIME':timedelta(minutes=30),
