@@ -1,0 +1,10 @@
+.login-page {
+    background-image: url('https://st.depositphotos.com/1605581/3032/i/450/depositphotos_30328185-stock-photo-abstract-blue-background-business-card.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 92vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

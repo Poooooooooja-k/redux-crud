@@ -1,0 +1,10 @@
+.register-page {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230521/pngtree-wallpaper-hd-nature-forest-lake-lake-in-autumn-image_2682116.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

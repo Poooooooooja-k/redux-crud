@@ -58,13 +58,15 @@ class LoginView(APIView):
         
         token=jwt.encode(payload,'secret',algorithm="HS256")
         response=Response()
+        role = 'ADMIN' if user.is_staff else 'USER'
 
         #adds the jwt token to the response data and returns the response to the client
         response.data={
-            'jwt':token
+            'jwt':token,
+            'staff':role
+            
         }
         return response
-
 
 class UserView(APIView):
     def get(self,request):

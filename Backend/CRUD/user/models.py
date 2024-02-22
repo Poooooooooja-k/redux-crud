@@ -29,7 +29,7 @@ class CustomUserManager(BaseUserManager):
 class CustomUser(AbstractUser):
     username=None
     email=models.EmailField(('email_address'),unique=True)
-    phone=models.CharField(help_text="Contact phone number",unique=True)
+    phone=models.CharField(help_text="Contact phone number",unique=True,null=True)
     image=models.ImageField(upload_to='images',blank=True,null=True)
 
         
