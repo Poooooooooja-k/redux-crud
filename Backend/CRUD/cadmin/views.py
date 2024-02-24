@@ -50,6 +50,10 @@ class AdminUserUpdate(APIView):
         last_name=request.data.get('last_name')
         email=request.data.get('email')
         phone=request.data.get('phone')
+        print(first_name)
+        print(last_name)
+        print(email)
+        print(phone)
         user_obj=CustomUser.objects.filter(pk=pk).first()
         if user_obj:
             user_obj.first_name=first_name

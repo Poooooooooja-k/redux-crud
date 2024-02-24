@@ -52,23 +52,23 @@ const UserProfile = () => {
     <div>
       <Navbar />
       <div className="col-md-9">
-        <div className="d-flex justify-content-center">
+        {/* <div className="d-flex justify-content-center">
           <img
             src=""
             className="img-thumbnail"
             style={{ width: "100px", height: "100px" }}
             alt="..."
           />
-        </div>
+        </div> */}
 
-        <div className="d-flex align-item-center justify-content-center p-3 ">
+        {/* <div className="d-flex align-item-center justify-content-center p-3 ">
         <div class="mb-3">  
           <input class="form-control" type="file" id="formFile" onChange={(e)=>setFile(e.target.files[0])} />
           <button type="button" className="btn btn-primary my-2" onClick={imageSubmit()}>
             upload image
           </button>
         </div>
-        </div>
+        </div> */}
 
         <div className="card-body p-4">
           <h6 style={{ textAlign: "center" }}>
